@@ -6,18 +6,81 @@
 		(http://getbootstrap.com/getting-started/) -->
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- End of Bootstrap template -->	
 		<title>Good Company Homepage</title>
 		<!-- what -->
+		<style>
+			.navbar-brand {
+				font-family: 'Limelight', cursive;
+				font-size: 200%;
+				color: white;
+			}
+
+			body {
+				padding: 100px;
+			}
+
+			.brand {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.circular {
+				width: 300px;
+				height: 300px;
+				border-radius: 150px;
+				-webkit-border-radius: 150px;
+				-moz-border-radius: 150px;
+				background: url(http://i.imgur.com/LXS04ht.png) no-repeat;
+				}
+		</style>
 	</head>
 	<body>
-		<ul class="nav nav-pills">
-  			<li class="active"><a href="#">Home</a></li>
-  			<li><a href="#">Profile</a></li>
-  			<li><a href="#">Messages</a></li>
-		</ul>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="brand">
+						<a class="navbar-brand" href="#">Good Company!</a>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav pull-right">
+						<li class="active"><a href="#">Hello</a></li> <!-- "active" class means it's highlighted in the menu bar -->
+						<li><a href="#">What?</a></li>
+						<li><a href="#">How?</a></li>
+						<li><a href="#">Why?</a></li>
+						<li><a href="#">Who?</a></li>
+						<!-- 
+						### holding onto to this bit of code in case I want to do a dropdown menu 
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+						-->
+					</ul>
+				</div> <!-- /.nav-collapse -->
+			</div> <!-- /.container-fluid -->
+		</nav>
+
+
 		<div class="container-fluid">
 
 			<!-- Welcome-->
@@ -54,14 +117,33 @@
 				</div>
 			</div>
 			
+
+			<!-- Who We Are - Heading -->
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Who we are.</h1>
+				</div>
+			</div>
+
 			<!-- Who We Are - Christian & Elvin -->
 			<div class="row"> 
-				<div class="col-md-6">
+				<div class="col-md-3">
+					<div class="circular"></div>
+				</div>
+
+				<div class="col-md-3">
 					<h2>Christian Dona</h2>
+					<h3>Film</h3>
 					<p>Brisket spare ribs drumstick, jerky turkey biltong hamburger pork andouille swine rump. Meatball drumstick tri-tip sausage kielbasa bacon pastrami leberkas sirloin pork loin venison kevin tenderloin. Biltong shoulder porchetta salami sirloin pancetta chicken tail shank drumstick. Porchetta beef ribs pork chop, bacon ribeye fatback cow hamburger pork belly rump landjaeger spare ribs andouille flank salami. Biltong flank tail, landjaeger pork loin salami capicola. Venison meatloaf doner landjaeger flank.</p>
 				</div>
-				<div class="col-md-6">
+
+				<div class="col-md-3">
+					<div class="circular"></div>
+				</div>
+
+				<div class="col-md-3">
 					<h2>Elvin Fontanilla</h2>
+					<h3>Literary and Visual Art</h3>
 					<p>Pork capicola cow fatback pastrami turkey hamburger meatloaf porchetta rump. Meatloaf jowl drumstick tri-tip, salami kielbasa turducken ham brisket pancetta doner ribeye rump capicola. Drumstick bresaola meatball landjaeger sausage, spare ribs pork loin. Shoulder kevin biltong landjaeger chicken. Porchetta shankle pancetta tail beef ribs kevin, capicola prosciutto tongue kielbasa meatloaf shoulder. Pork chop beef turducken, shankle fatback tri-tip rump tongue doner tail.</p>
 				</div>
 			</div>
@@ -70,10 +152,12 @@
 			<div class="row"> 
 				<div class="col-md-6">
 					<h2>Jeremy Domasian</h2>
+					<h3>Tech Lead and Creative Consultant</h3>
 					<p>Landjaeger chicken meatloaf jerky boudin strip steak shoulder, short ribs drumstick shankle kevin. Bacon rump sausage capicola. Porchetta rump kevin hamburger tri-tip sausage drumstick brisket meatball. Swine doner fatback cow venison. Landjaeger venison short loin, kevin tenderloin bacon rump meatloaf shankle pig filet mignon turducken short ribs. Tri-tip ground round porchetta swine boudin short loin, corned beef chicken leberkas strip steak hamburger shank pancetta filet mignon. Tri-tip bresaola spare ribs kevin chicken beef jowl leberkas pastrami turkey pork loin.</p>
 				</div>
 				<div class="col-md-6">
 					<h2>Michael Philip Morales</h2>
+					<h3>Principal Swag-ographer</h3>
 					<p>Pancetta drumstick tail beef ribs pork chop sirloin beef sausage tongue frankfurter capicola andouille. Filet mignon t-bone ham hock, bacon andouille bresaola shoulder sirloin jerky. Pork chop sausage prosciutto brisket ground round rump. Kevin capicola frankfurter boudin bresaola tongue chicken pork loin. Sirloin strip steak pancetta, landjaeger beef ribs jerky drumstick ground round bresaola doner andouille hamburger tri-tip. Tri-tip flank shoulder, brisket t-bone beef capicola chuck ball tip short ribs meatball pork. Biltong ham prosciutto meatloaf, pork chop leberkas spare ribs bresaola.</p>
 				</div>
 			</div>
