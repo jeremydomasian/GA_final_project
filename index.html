@@ -9,35 +9,28 @@
     	<link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
 		<!-- End of Bootstrap template -->	
 		<title>Good Company Homepage</title>
 		<!-- what -->
-		<style>
-			.navbar-brand {
-				font-family: 'Limelight', cursive;
-				font-size: 200%;
-				color: white;
-			}
+		<script>
+			$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			        || location.hostname == this.hostname) {
 
-			body {
-				padding: 100px;
-			}
-
-			.brand {
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.circular {
-				width: 300px;
-				height: 300px;
-				border-radius: 150px;
-				-webkit-border-radius: 150px;
-				-moz-border-radius: 150px;
-				background: url(http://i.imgur.com/LXS04ht.png) no-repeat;
-				}
-		</style>
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			           if (target.length) {
+			             $('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+			        }
+			    }
+			});
+		</script>
 	</head>
+
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
@@ -50,7 +43,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="brand">
-						<a class="navbar-brand" href="#">Good Company!</a>
+						<a class="navbar-brand" href="#"><img style="height:100%;" src="https://i.imgur.com/YvaDrDi.gif" alt="Good Company!"></a>
 					</div>
 				</div>
 
@@ -61,7 +54,7 @@
 						<li><a href="#">What?</a></li>
 						<li><a href="#">How?</a></li>
 						<li><a href="#">Why?</a></li>
-						<li><a href="#">Who?</a></li>
+						<li><a href="#who">Who?</a></li>
 						<!-- 
 						### holding onto to this bit of code in case I want to do a dropdown menu 
 						<li class="dropdown">
@@ -83,13 +76,21 @@
 
 		<div class="container-fluid">
 
+			<!-- Landing -->
+			<div class="row">
+				<div class="col-md-6 col-md-3-offset">
+					<img style="width:100%; margin-left:auto; margin-right:auto;" src="https://i.imgur.com/YvaDrDi.gif">
+				</div>
+			</div>
+
 			<!-- Welcome-->
 			<div class="row">
 				<div class="col-md-6">
-					<h1 style="text-align:center">Welcome.</h1>
+					<h1 style="text-align:center; ">Welcome.</h1> <!-- http://d1hw6n3yxknhky.cloudfront.net/000956029_prevstill.jpeg -->
 				</div>
 				<div class="col-md-6">
-					<p style="text-align:center">Welcome to Good Company's homepage. We make dope shit.</p>
+					<h1>Hello.</h1>
+					<p>Welcome to Good Company's humble abode on the web. Four dudes. One group. We form like Voltron and crush foes.</p>
 				</div>				
 			</div>
 
@@ -119,50 +120,61 @@
 			
 
 			<!-- Who We Are - Heading -->
-			<div class="row">
-				<div class="col-md-12">
-					<h1>Who we are.</h1>
+			<div class="row" id="who">
+				<div class="col-md-6 col-md-offset-3">
+					<h1 style="text-align:center;">Who we are.</h1>
 				</div>
 			</div>
 
 			<!-- Who We Are - Christian & Elvin -->
 			<div class="row"> 
 				<div class="col-md-3">
-					<div class="circular"></div>
+					<div class="dona-pic"></div>
 				</div>
 
 				<div class="col-md-3">
 					<h2>Christian Dona</h2>
-					<h3>Film</h3>
-					<p>Brisket spare ribs drumstick, jerky turkey biltong hamburger pork andouille swine rump. Meatball drumstick tri-tip sausage kielbasa bacon pastrami leberkas sirloin pork loin venison kevin tenderloin. Biltong shoulder porchetta salami sirloin pancetta chicken tail shank drumstick. Porchetta beef ribs pork chop, bacon ribeye fatback cow hamburger pork belly rump landjaeger spare ribs andouille flank salami. Biltong flank tail, landjaeger pork loin salami capicola. Venison meatloaf doner landjaeger flank.</p>
+					<h3>Film and Photography</h3>
+					<p>When Christian is not behind the camera, shooting a short, his passion is in his video editing. Whether it's performing a J/L cut, matching on cut or even deciding which footage should be left on the cutting room floor, Christian's attention to detail gives him the upper hand when editing meticulous raw footage.</p>
 				</div>
 
 				<div class="col-md-3">
-					<div class="circular"></div>
+					<div class="elbiino-pic"></div>
 				</div>
 
 				<div class="col-md-3">
 					<h2>Elvin Fontanilla</h2>
 					<h3>Literary and Visual Art</h3>
-					<p>Pork capicola cow fatback pastrami turkey hamburger meatloaf porchetta rump. Meatloaf jowl drumstick tri-tip, salami kielbasa turducken ham brisket pancetta doner ribeye rump capicola. Drumstick bresaola meatball landjaeger sausage, spare ribs pork loin. Shoulder kevin biltong landjaeger chicken. Porchetta shankle pancetta tail beef ribs kevin, capicola prosciutto tongue kielbasa meatloaf shoulder. Pork chop beef turducken, shankle fatback tri-tip rump tongue doner tail.</p>
+					<p>Besides rapping on the mic and acting in short films, Elvin spends all his time drawing tattoos for clients. His tattoo illustration styles vary from traditional, tribal as well as contemporary. He is currently on his way to an apprenticeship at a local tattoo parlor in San Francisco.</p>
 				</div>
 			</div>
 
 			<!-- Who We Are - Jeremy & Mike -->
 			<div class="row"> 
-				<div class="col-md-6">
-					<h2>Jeremy Domasian</h2>
-					<h3>Tech Lead and Creative Consultant</h3>
-					<p>Landjaeger chicken meatloaf jerky boudin strip steak shoulder, short ribs drumstick shankle kevin. Bacon rump sausage capicola. Porchetta rump kevin hamburger tri-tip sausage drumstick brisket meatball. Swine doner fatback cow venison. Landjaeger venison short loin, kevin tenderloin bacon rump meatloaf shankle pig filet mignon turducken short ribs. Tri-tip ground round porchetta swine boudin short loin, corned beef chicken leberkas strip steak hamburger shank pancetta filet mignon. Tri-tip bresaola spare ribs kevin chicken beef jowl leberkas pastrami turkey pork loin.</p>
+				<div class="col-md-3">
+					<div class="jdizz-pic"></div>
 				</div>
-				<div class="col-md-6">
-					<h2>Michael Philip Morales</h2>
-					<h3>Principal Swag-ographer</h3>
-					<p>Pancetta drumstick tail beef ribs pork chop sirloin beef sausage tongue frankfurter capicola andouille. Filet mignon t-bone ham hock, bacon andouille bresaola shoulder sirloin jerky. Pork chop sausage prosciutto brisket ground round rump. Kevin capicola frankfurter boudin bresaola tongue chicken pork loin. Sirloin strip steak pancetta, landjaeger beef ribs jerky drumstick ground round bresaola doner andouille hamburger tri-tip. Tri-tip flank shoulder, brisket t-bone beef capicola chuck ball tip short ribs meatball pork. Biltong ham prosciutto meatloaf, pork chop leberkas spare ribs bresaola.</p>
+
+				<div class="col-md-3">
+					<h2>Jeremy Domasian</h2>
+					<h3>Web Development and Design</h3>
+					<p>Jeremy is currently in an internship with a start-up company named Splunk. However, when pre-production for a short comes up, Jeremy is the one in charge with the creative process. Filling plot holes, smoothing out continuity and making sure the project is cohesive, are just a few of his jobs on set</p>
+				</div>
+
+				<div class="col-md-3">
+					<div class="mikeymo-pic"></div>
+				</div>
+
+				<div class="col-md-3">
+					<h2>Michael Morales</h2>
+					<h3>Swag-ology</h3>
+					<p>Meet Michael. Mike is currently focusing on become a member of the San Jose Police Department. On his free time, Mike handles the lighting when filming is taken place, writes lyrics for his own songs and even designs his own costumes of famous superheroes and participates in comic book conventions.</p>
 				</div>
 			</div>
 
 
 		</div>
+
+
 	</body>
 </html>

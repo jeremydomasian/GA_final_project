@@ -1,0 +1,52 @@
+
+
+.navbar-brand {
+	font-family: 'Limelight', cursive;
+	font-size: 200%;
+	color: white;
+}
+
+body {
+	padding: 100px;
+}
+
+.brand {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dona-pic {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px !important;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://i.imgur.com/S6wYMF1.jpg) no-repeat;
+}
+
+.elbiino-pic {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://i.imgur.com/eTf6iJp.png) no-repeat;
+}
+
+.jdizz-pic {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://i.imgur.com/j5AcWYH.jpg) no-repeat;
+}
+
+.mikeymo-pic {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://i.imgur.com/Frml8u4.png) no-repeat;
+}
