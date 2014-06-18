@@ -1,4 +1,14 @@
+.navbar-brand {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
 
+.navbar-nav li a {
+	line-height: 50px;
+	height: 100px;
+	padding: 20px auto;
+}
 
 .navbar-brand {
 	font-family: 'Limelight', cursive;
@@ -49,4 +59,9 @@ body {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	background: url(http://i.imgur.com/Frml8u4.png) no-repeat;
+}
+
+.who {
+	background: url(http://i.imgur.com/3mV99h7.jpg) no-repeat;
+	background-size: contain;
 }
