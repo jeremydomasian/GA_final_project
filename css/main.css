@@ -6,9 +6,11 @@
 }
 
 .navbar-nav li a {
-	line-height: 50px;
+	line-height: 100px;
 	height: 100px;
 	padding: 20px auto;
+	font-family: 'Limelight', cursive;
+	font-size: 300%;
 }
 
 .navbar-brand {
