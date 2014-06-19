@@ -1,3 +1,7 @@
+section {
+	padding-top: 100px;
+
+}
 
 .navbar-brand {
     line-height: 100px;
@@ -19,9 +23,11 @@
 	color: white;
 }
 
+/*
 body {
 	padding: 100px;
 }
+*/
 
 .brand {
 	margin-left: auto;
@@ -34,7 +40,7 @@ body {
 	border-radius: 150px !important;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i.imgur.com/S6wYMF1.jpg) no-repeat;
+	background: url(http://placehold.it/250x250) no-repeat;
 }
 
 .elbiino-pic {
@@ -43,7 +49,7 @@ body {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i.imgur.com/eTf6iJp.png) no-repeat;
+	background: url(http://placehold.it/250x250) no-repeat;
 }
 
 .jdizz-pic {
@@ -52,7 +58,7 @@ body {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i.imgur.com/j5AcWYH.jpg) no-repeat;
+	background: url(http://placehold.it/250x250) no-repeat;
 }
 
 .mikeymo-pic {
@@ -61,7 +67,7 @@ body {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i.imgur.com/Frml8u4.png) no-repeat;
+	background: url(http://placehold.it/250x250) no-repeat;
 }
 
 /*
