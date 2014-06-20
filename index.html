@@ -1,9 +1,7 @@
-<!-- changes -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Taken from Bootstrap Getting Started basic template
-		(http://getbootstrap.com/getting-started/) -->
+		<!-- Taken from Bootstrap Getting Started basic template (http://getbootstrap.com/getting-started/) -->
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
@@ -12,7 +10,6 @@
 		<link rel="stylesheet" href="css/main.css">
 		<!-- End of Bootstrap template -->	
 		<title>Good Company Homepage</title>
-		<!-- what -->
 	</head>
 
 	<body>
@@ -28,18 +25,18 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="brand">
-						<a class="navbar-brand" href="#"><img style="height:100%;" src="https://i.imgur.com/MHOsFkf.gif" alt="Good Company!"></a>
+						<a class="navbar-brand" href="#banner"><img style="height:100%;" src="https://i.imgur.com/MHOsFkf.gif" alt="Good Company!"></a>
 					</div>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#hello">Hello!</a></li> <!-- "active" class for li means it's highlighted in the nav bar -->
-						<li><a href="#what">What?</a></li>
-						<li><a href="#how">How?</a></li>
-						<li><a href="#why">Why?</a></li>
-						<li><a href="#who">Who?</a></li>
+						<li><a data-scroll href="#hello">Hello!</a></li> <!-- "active" class for li means it's highlighted in the nav bar -->
+						<li><a data-scroll href="#what">What?</a></li>
+						<li><a data-scroll href="#how">How?</a></li>
+						<li><a data-scroll href="#why">Why?</a></li>
+						<li><a data-scroll href="#who">Who?</a></li>
 					</ul>
 				</div> <!-- /.nav-collapse -->
 
@@ -190,8 +187,14 @@
 			</div>
 			</section>
 		</div>
+
+		<!-- JS goes here! -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/smooth-scroll.js"></script>
 		<script src="js/bg_change.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+    		smoothScroll.init();
+		</script>
 	</body>
 </html>
