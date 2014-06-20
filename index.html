@@ -13,22 +13,6 @@
 		<!-- End of Bootstrap template -->	
 		<title>Good Company Homepage</title>
 		<!-- what -->
-		<script>
-			$('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-			        || location.hostname == this.hostname) {
-
-			        var target = $(this.hash);
-			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			           if (target.length) {
-			             $('html,body').animate({
-			                 scrollTop: target.offset().top
-			            }, 1000);
-			            return false;
-			        }
-			    }
-			});
-		</script>
 	</head>
 
 	<body>
@@ -56,7 +40,6 @@
 						<li><a href="#how">How?</a></li>
 						<li><a href="#why">Why?</a></li>
 						<li><a href="#who">Who?</a></li>
-						<li><a href="#bye">Goodbye?</a></li>
 					</ul>
 				</div> <!-- /.nav-collapse -->
 
@@ -68,7 +51,7 @@
 
 			<!-- Landing -->
 			<section>
-			<div class="row" style="background: url(http://i.imgur.com/3mV99h7.jpg) no-repeat; background-position: center center;">
+			<div id="banner" class="static row">
 				<div class="col-md-6 col-md-offset-3">
 					<img style="width:100%;" src="https://i.imgur.com/YvaDrDi.gif">
 				</div>
@@ -77,30 +60,26 @@
 
 			<!-- Landing - User Welcome -->
 			<section id="hello">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="center">
-						<h1 style="display:inline;">Welcome, </h1>
-						<h1 style="display:inline" class="user">_______.</h1>
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Welcome. </h1>
 					</div>
 				</div>
-			</div>
-			</section>
-
+			
 			<!-- Welcome - One-liner -->
 			<div class="row">
 				<div class="col-md-12">				
 					<p style="text-align:center;" class="lead">Welcome to Good Company's humble abode on the web. Four dudes. One group. We form like Voltron and crush foes.</p>
 				</div>				
 			</div>
+			</section>
 
 			<!-- What We Do -->
 			<section id="what">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>What we do.</h1>
-					<h2 style="text-align:center;">Imagination + Passion. Imagipassion. Passionation. Yes.</h2>
-					<p>Imagination and passion are our two core values. We take your vision and make it into a reality.</p>
+					<h2 style="text-align:center;">Imagination + Passion + Technical Know-How. We make your vision a reality.</h2>
 				</div>
 			</div>
 			</section>
@@ -113,7 +92,7 @@
 					<h1>How we do it.</h1>
 				</div>
 			</div>
-			</section>
+			
 
 			<!-- How We Do It - breakdown -->
 			<div class="row">
@@ -143,13 +122,14 @@
 				</div>
 
 			</div>
+			</section>
 
 			<!-- Why We Do It -->
 			<section id="why">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Why we do it.</h1>
-					<p>Short loin pig capicola, corned beef sirloin porchetta pork beef ribs. Ball tip kielbasa doner leberkas meatloaf, chuck capicola rump turkey short loin short ribs pastrami. Pig frankfurter kevin tail corned beef shoulder jowl brisket swine strip steak pancetta. Ribeye landjaeger meatloaf, t-bone swine pig pork belly. Frankfurter sirloin shankle, pork belly kevin pork pig meatloaf leberkas flank swine. Boudin kevin kielbasa, rump ribeye venison t-bone frankfurter tenderloin. Shank jowl hamburger, turkey ham turducken boudin tongue rump corned beef pork belly salami tri-tip cow porchetta.</p>
+					<h3 style="text-align: center;">Because we're passionate about capturing those swirly, nebulous ideas in your head and making them extant in this dimension.</h3>
 				</div>
 			</div>
 			</section>
@@ -211,6 +191,7 @@
 			</section>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bg_change.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
