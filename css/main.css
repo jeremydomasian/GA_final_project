@@ -24,6 +24,10 @@
 
 /* General elements */
 
+body {
+	background-color: #95a5a6;
+}
+
 section {
 	padding-top: 100px;
 	padding-bottom: 50px;
